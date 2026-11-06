@@ -1,31 +1,47 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>WolfGoldToken - WGT</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WGT Mining Dashboard</title>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet">
 <style>
-body{background:#0a0a0a;color:#fff;font-family:Arial;text-align:center;margin:0;padding:20px}
-h1{color:#FFD700;font-size:32px}
-.btn{background:#FFD700;color:#000;padding:15px 25px;border-radius:10px;text-decoration:none;display:inline-block;margin:10px;font-weight:bold}
-.box{border:1px solid #FFD700;border-radius:15px;padding:20px;margin:20px 0;background:#111}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#000;color:#fff;font-family:Arial;padding-bottom:80px}
+.header{margin:8px;background:#14120a;border:1px solid #2a2410;border-radius:16px;padding:14px;display:flex;justify-content:space-between;align-items:center}
+.title{color:#e8c77a;font-family:Orbitron;font-size:18px}
+.badge{text-align:center;margin:10px}
+.badge span{border:1px solid #c8a400;border-radius:20px;padding:6px 18px;color:#e8c77a;font-size:11px;background:#14120a}
+.coin{width:300px;height:300px;margin:10px auto;background:url('token.jpg') center/cover,gold;border-radius:50%;box-shadow:0 0 60px rgba(255,215,0,0.6);border:2px solid gold}
+.cards{margin:12px 8px;display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.card{background:linear-gradient(180deg,#14120a,#0a0905);border:1px solid #d4b43c;border-radius:14px;padding:18px;text-align:center}
+.val{font-family:Orbitron;font-size:28px;font-weight:700;margin:6px 0}
+.refer{margin:12px 8px;background:#14120a;border:1px solid #d4b43c;border-radius:14px;padding:12px}
+.invite{background:linear-gradient(180deg,#ffe89a,#c8a400);border:none;padding:10px 18px;border-radius:10px;font-weight:800;font-size:12px}
+.nav{position:fixed;bottom:0;left:0;right:0;background:#111;border-top:1px solid #222;display:flex;justify-content:space-around;padding:10px 0 20px}
 </style>
 </head>
 <body>
-<h1>🐺 WolfGoldToken 💰</h1>
-<h2>WGT - The Future of Gold</h2>
-<div class="box">
-<p>Welcome to Official WolfGoldToken Website</p>
-<p><b>BEP-20 Token on BSC Network</b></p>
-<p>Contract: 0x123... (Apna address yahan lagana)</p>
+<div class="header"><div>💼</div><div class="title">WGT Mining Dashboard</div><div>🔔 ⚙️</div></div>
+<div class="badge"><span>● MINING ACTIVE</span></div>
+<div style="text-align:center"><div class="coin"></div></div>
+<div class="cards">
+<div class="card"><div style="color:#8a7a4a;font-size:11px">HASH RATE</div><div class="val">1.24 GH/s</div><div style="color:#5f9d5f;font-size:11px">+2.4% ↑</div></div>
+<div class="card"><div style="color:#8a7a4a;font-size:11px">EARNINGS TODAY</div><div class="val">0.042 WGT</div><div style="color:#8a7a4a;font-size:11px">~$18.76 USD</div></div>
 </div>
-<a class="btn" href="#">Buy on PancakeSwap</a>
-<a class="btn" href="#">Join Telegram</a>
-<a class="btn" href="#">Whitepaper</a>
-<div class="box">
-<h3>Tokenomics</h3>
-<p>Total Supply: 1,000,000,000 WGT</p>
-<p>🔥 Burn | 💧 Liquidity | 🎁 Rewards</p>
+<div class="refer">
+<div style="color:#e8c77a;font-family:Orbitron;text-align:center;font-weight:700">REFER & EARN</div>
+<div style="display:flex;justify-content:space-between;align-items:center;margin-top:10px">
+<div style="font-size:12px;color:#a89a6a">Invite friends and earn<br><b style="color:#fff">0.01 WGT per referral</b></div>
+<button class="invite">INVITE NOW</button>
 </div>
-<p style="color:#888">© 2026 WolfGoldToken. All Rights Reserved.</p>
+</div>
+<div class="nav">
+<div style="color:#e8c77a;text-align:center">📊<br><small>Dashboard</small></div>
+<div style="text-align:center;color:#6a5f3a">⛏️<br><small>Mine</small></div>
+<div style="text-align:center;color:#6a5f3a">💼<br><small>Wallet</small></div>
+<div style="text-align:center;color:#6a5f3a">👥<br><small>Refer</small></div>
+<div style="text-align:center;color:#6a5f3a">👤<br><small>Settings</small></div>
+</div>
 </body>
 </html>
