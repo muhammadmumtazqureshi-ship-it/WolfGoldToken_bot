@@ -1,5 +1,7 @@
 <!DOCTYPE html>
-<html><head><meta charset="UTF-8">
+<html>
+<head>
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>WGT</title>
 <style>
@@ -13,10 +15,60 @@ body{background:#000;color:#fff;font-family:Arial;margin:0;display:flex;justify-
 .sec{display:none;padding:10px}
 .sec.on{display:block}
 .bottom{position:fixed;bottom:0;left:50%;transform:translateX(-50%);width:100%;max-width:420px;background:#111;display:flex;justify-content:space-around;padding:6px 0;border-top:1px solid #333}
-.b{color:#777;text-align:center;font-size:10px}
+.b{color:#777;text-align:center;font-size:10px;cursor:pointer}
 .b.on{color:gold}
 .b span{font-size:22px;display:block}
-</style></head><body>
+</style>
+</head>
+<body>
 <div class="app">
-<div id="d" class="sec on"><div class="top">WGT Dashboard</div><div class="c"><img src="token.jpg"></div><div class="box"><div class="card">HASH<br><b>1.24 GH/s</b></div><div class="card">EARN<br><b>0.042 WGT</b></div></div></div>
-<div id="m" class="sec"><div class="top">Mine</div><div style="text-align:center;padding:30px"><img src="token.jpg"
+<div id="d" class="sec on">
+<div class="top">WGT Mining Dashboard</div>
+<div class="c"><img src="token.jpg"></div>
+<div class="box">
+<div class="card">HASH<br><b>1.24 GH/s</b></div>
+<div class="card">EARN<br><b>0.042 WGT</b></div>
+</div>
+</div>
+<div id="m" class="sec">
+<div class="top">Mine WGT</div>
+<div style="text-align:center;padding:30px">
+<img src="token.jpg" style="width:200px;border-radius:50%">
+<h3 style="color:gold">Mining Active</h3>
+</div>
+</div>
+<div id="w" class="sec">
+<div class="top">Wallet</div>
+<div style="text-align:center;padding:20px"><h1>1.458 WGT</h1><p>~$652</p></div>
+</div>
+<div id="r" class="sec">
+<div class="top">Refer</div>
+<div style="text-align:center;padding:20px">
+<p>Earn 0.01 WGT per referral</p>
+<div style="background:#111;border:1px dashed gold;padding:10px;border-radius:8px">t.me/WolfGoldToken_bot</div>
+</div>
+</div>
+<div id="s" class="sec">
+<div class="top">Settings</div>
+<div style="padding:20px">
+<div style="background:#111;padding:10px;border-radius:8px">Notifications ON</div>
+</div>
+</div>
+<div class="bottom">
+<div id="bd" class="b on" onclick="go('d','bd')"><span>📊</span>Dashboard</div>
+<div id="bm" class="b" onclick="go('m','bm')"><span>⛏️</span>Mine</div>
+<div id="bw" class="b" onclick="go('w','bw')"><span>💼</span>Wallet</div>
+<div id="br" class="b" onclick="go('r','br')"><span>👥</span>Refer</div>
+<div id="bs" class="b" onclick="go('s','bs')"><span>⚙️</span>Settings</div>
+</div>
+</div>
+<script>
+function go(a,b){
+document.querySelectorAll('.sec').forEach(x=>x.classList.remove('on'));
+document.getElementById(a).classList.add('on');
+document.querySelectorAll('.b').forEach(x=>x.classList.remove('on'));
+document.getElementById(b).classList.add('on');
+}
+</script>
+</body>
+</html>
